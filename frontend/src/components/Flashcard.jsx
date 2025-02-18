@@ -16,7 +16,7 @@ export default function Flashcard(props){
   
    async function handleDelete (){
     
-    await axios.get(`http://localhost:8000/flashcard/delete/${props.value._id}`)
+    await axios.get(`https://backend-alfredtask.vercel.app/flashcard/delete/${props.value._id}`)
     .then((res)=>{
         if(res.data.success){
             toast.success(res.data.message);
