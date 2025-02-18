@@ -24,7 +24,7 @@ export function UpdateFlashcard(){
 
 
     async function getFlashcardInfo(){
-        await axios.get(`http://localhost:8000/flashcard/update/${flashcardId}`)
+        await axios.get(`https://backend-alfredtask.vercel.app/flashcard/update/${flashcardId}`)
         .then((res)=>{
            
             if(res.data.success){
