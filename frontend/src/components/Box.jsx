@@ -15,11 +15,11 @@ export default function Box(props){
             <CardTitle>Box {props.boxNumber} ({props.value.length} card)</CardTitle>
           </CardHeader>
           <CardContent>
-          <ul>
-            {props.value?.map((q)=>(
-            <li key={q.id}>{q.question}</li>
+           <ul>
+            {props.value?.map((q,idx)=>(
+            <li key={idx}>{q.question}</li>
             ))}
-             </ul>
+          </ul>
           </CardContent>
         </Card>
         
