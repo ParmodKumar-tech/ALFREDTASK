@@ -13,11 +13,17 @@ export default function Hero(){
 
     return(
         <>
-      <div className='flex items-center justify-between m-2'>
+      <div className='flex flex-wrap items-center justify-between m-2'>
         <h1 className="text-3xl text-center font-bold my-5">📚 Leitner System Flashcards</h1>
         <Button>
             
             <Link to="/add">Add</Link>
+            
+            </Button>
+
+            <Button>
+            
+            <Link to="/all">All flashcard</Link>
             
             </Button>
         <Button onClick={Logout}>
