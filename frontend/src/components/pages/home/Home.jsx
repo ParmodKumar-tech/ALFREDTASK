@@ -22,7 +22,7 @@ export default function Home() {
 
   async function fetchFlashcards() {
     try {
-      const res = await axios.get(`http://localhost:8000/flashcard/${userId}`);
+      const res = await axios.get(`https://backend-alfredtask.vercel.app/flashcard/${userId}`);
       if (res.data.success) {
     
         setBox1(res.data.data); 
