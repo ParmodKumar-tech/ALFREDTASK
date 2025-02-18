@@ -43,16 +43,7 @@ export default function Home() {
     setShowAnswer(false);
   }
 
-  if (box1.length === 0) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <Card className="p-6 text-center">
-          <h2 className="text-2xl font-bold mb-4">Great job!</h2>
-          <p>You've reviewed all the flashcards.</p>
-        </Card>
-      </div>
-    );
-  }
+  
 
   return (
     <div className="m-7">
