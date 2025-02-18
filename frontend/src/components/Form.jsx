@@ -12,7 +12,7 @@ export default function Form(){
     const nagivate=useNavigate();
 
     async function onSubmit(data){
-        await axios.post("http://localhost:8000/login",data)
+        await axios.post("https://backend-alfredtask.vercel.app/login",data)
         .then((res)=>{
            
             if(res.data.success){
