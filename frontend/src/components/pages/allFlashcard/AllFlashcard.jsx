@@ -16,7 +16,7 @@ export default function AllFlashcard(){
     },[])
    
     async function flashcards(){
-        await axios.get(`http://localhost:8000/flashcard/${userId}`)
+        await axios.get(`https://backend-alfredtask.vercel.app/flashcard/${userId}`)
         .then((res)=>{
             if(res.data.success){
                 setData(res.data.data)
