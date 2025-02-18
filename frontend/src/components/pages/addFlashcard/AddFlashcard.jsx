@@ -19,7 +19,7 @@ export function AddFlashcard(){
     async function onSubmit(data){
 
 
-        await axios.post(`http://localhost:8000/flashcard/add/${userId}`,data)
+        await axios.post(`https://backend-alfredtask.vercel.app/flashcard/add/${userId}`,data)
         .then((res)=>{
             if(res.data.success){
                 toast.success(res.data.message);
