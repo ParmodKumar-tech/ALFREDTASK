@@ -22,7 +22,7 @@ export default function Home() {
 
   async function fetchFlashcards() {
     try {
-      const res = await axios.get(`https://backend-alfredtask.vercel.app/flashcard/${userId}`);
+      const res = await axios.get(`http://localhost:8000/flashcard/${userId}`);
       if (res.data.success) {
     
         setBox1(res.data.data); 
@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="m-7">
       <Hero />
-      <div className="flex w-full bg-amber-400 justify-between p-4">
+      <div className="flex flex-wrap gap-1 w-full bg-amber-400 justify-between p-3">
         <Box value={box1} boxNumber={1} />
         <Box value={box2} boxNumber={2} />
       </div>
